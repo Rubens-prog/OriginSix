@@ -19,9 +19,19 @@
   </head>
   <body>
     <header id="header">
-      <nav class="container">
+      <nav class="container show">
         <a class="logo" href="#">Beauty<span>Bilu</span>.</a>
-        <div>...</div>
+        <div class="menu">
+          <ul class="grid">
+            <li><a class="title" href="#home">Início</a></li>
+            <li><a class="title" href="#about">Sobre</a></li>
+            <li><a class="title" href="#services">Serviços</a></li>
+            <li><a class="title" href="#testimonials">Depoimentos</a></li>
+            <li><a class="title" href="#contact">Contato</a></li>
+          </ul>
+        </div>
+        <div class="toggle open"><i class="fas fa-bars"></i></div>
+        <div class="toggle close"><i class="fas fa-times"></i></div>
       </nav>
     </header>
 
@@ -44,13 +54,47 @@
         </div>
       </section>
       <div class="divider-1"></div>
+
       <section class="section" id="about">
-        <div class="container grid">Sobre</div>
+        <div class="container grid">
+          <div class="image">
+            <img
+              src="https://images.unsplash.com/photo-1559599101-f09722fb4948?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
+              alt=""
+            />
+          </div>
+          <div class="text">
+            <h2 class="title">Sobre nós</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum
+              explicabo necessitatibus temporibus atque suscipit. Exercitationem
+              quisquam facere vel impedit tempora libero, dicta explicabo
+              repellat harum expedita ipsa nobis voluptates dolor?
+            </p>
+            <br />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid,
+              facilis dolores. Accusamus mollitia dolorum minima enim. Nulla,
+              harum vero, quo sint, aperiam aliquid magni quia doloremque
+              ducimus amet minus recusandae?
+            </p>
+            <br />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+              ratione quos itaque ex distinctio consectetur, dolores molestias
+              vero impedit assumenda doloremque delectus possimus ipsam nisi
+              enim quidem veritatis iste maxime?
+            </p>
+            <br />
+          </div>
+        </div>
       </section>
 
       <section class="section" id="services">
         <div class="container grid">Services</div>
       </section>
     </main>
+
+    <script src="main.js"></script>
   </body>
 </html>
