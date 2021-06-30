@@ -45,12 +45,30 @@ window.addEventListener('scroll', function () {
 /*================== SWIPER ====================*/
 //para objetos use {propriedade:'valor'}//
 
-const swiper = new Swiper('.swiper-container',{
+const swiper = new Swiper('.swiper-container', {
   slidesPerview: 1,
-  pagination:{
-    el:'.swiper-pagination'   
+  pagination: {
+    el: '.swiper-pagination',
   },
   mousewheel: true,
   keyboard: true,
+});
 
-})
+/*================== SCROLLREVEAL ====================*/
+
+const scrollReveal = ScrollReveal({
+  origin: 'top',
+  distance: '30px',
+  duration: 700, //miliseconds//
+  reset: true,
+});
+
+scrollReveal.reveal(
+  `#home .image, #home .text,
+  #about .image, #about .text,
+  #services header, #services .card,
+  #testimonials header, #testimonials .testimonials
+  #contact .text, #contact .links
+  `,
+  { interval: 100 }
+);
