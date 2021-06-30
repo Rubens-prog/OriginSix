@@ -41,3 +41,16 @@ window.addEventListener('scroll', function () {
     header.classList.remove('scroll');
   }
 });
+
+/*================== SWIPER ====================*/
+//para objetos use {propriedade:'valor'}//
+
+const swiper = new Swiper('.swiper-container',{
+  slidesPerview: 1,
+  pagination:{
+    el:'.swiper-pagination'   
+  },
+  mousewheel: true,
+  keyboard: true,
+
+})
