@@ -208,8 +208,10 @@ nav ul li a {
   position: relative; /*relative funcionando como o pai de li a:hover*/
 }
 
-nav ul li a:hover {
+nav ul li a:hover,
+nav ul li a.active {
   color: var(--base-color);
+  font-weight: bold;
 }
 
 nav ul li a::after {
@@ -225,7 +227,8 @@ nav ul li a::after {
   transition: width 0.1s;
 }
 
-nav ul li a:hover::after {
+nav ul li a:hover::after,
+nav ul li a.active::after {
   width: 100%;
 }
 
@@ -568,7 +571,7 @@ footer .social a:hover {
     gap: 2rem;
   }
 
-  nav .menu ul a.title {
+  nav .menu ul li a.title {
     font: 700 1rem var(--body-font);
   }
 
@@ -600,7 +603,7 @@ footer .social a:hover {
 
   /*------services------*/
 
-  #services .cards {
+  .cards {
     grid-template-columns: 1fr 1fr 1fr;
   }
 
